@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The imitation Game</title>
+
+    <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Jogo da Adivinhação</h1>
+        <p>Adivinhe o número entre 0 e 10</p>
+        <form>
+          <input id="inputNumber" type="number" />
+          <button id="tryBtn">Tentar</button>
+        </form>
+      </div>
+
+      <div class="modal hide">
+        <h2>Você acertou em 2 tentativas!</h2>
+        <button id="reset">Jogar novamente</button>
+        <canvas id="my-canvas"></canvas>
+      </div>
+    </main>
+
+    <script src="/js/index.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
